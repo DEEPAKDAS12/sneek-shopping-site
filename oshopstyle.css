@@ -1,0 +1,250 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+}
+
+/* Menu bar styles */
+#menu-bar {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 3px;
+}
+
+#menu-options {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#menu-options button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    background: linear-gradient(to bottom, #007bff, #0056b3);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#menu-options button:hover {
+    background: linear-gradient(to bottom, #0056b3, #003d7f);
+}
+
+/* Form styles */
+.forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#signup-form,
+#login-form {
+    width: 100%;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center horizontally */
+    text-align: center; /* Center the content inside the form */
+}
+
+
+#signup-form h2,
+#login-form h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+#signup-form input,
+#login-form input,
+#signup-form button,
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#signup-form button,
+#login-form button {
+    background: linear-gradient(to bottom, #007bff, #0056b3);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#signup-form button:hover,
+#login-form button:hover {
+    background: linear-gradient(to bottom, #0056b3, #003d7f);
+}
+
+
+#signup-error-container {
+    color: #dc3545;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+
+
+
+/* Products list styles */
+#products {
+    display: none;
+}
+
+#products h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#products-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#products-list li {
+    padding: 10px;
+    margin-bottom: 10px; /* Increase or decrease as needed */
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#products-list img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#products-list button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, #007bff, #0056b3);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#products-list button:hover {
+    background: linear-gradient(to bottom, #0056b3, #003d7f);
+}
+
+/* Cart styles */
+
+
+#cart h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, #dc3545, #bd2130);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#cart-items button:hover {
+    background: linear-gradient(to bottom, #bd2130, #b21f2d);
+}
+
+/* View cart button */
+#view-cart-btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    background: linear-gradient(to bottom, #ffc107, #d39e00);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#view-cart-btn:hover {
+    background: linear-gradient(to bottom, #d39e00, #b38e00);
+}

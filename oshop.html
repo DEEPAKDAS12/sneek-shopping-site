@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sneek</title>
+    <link rel="stylesheet" href="oshopstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu-bar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="user-info"></div>
+            <div id="menu-options" style="display: none;">
+                <button onclick="confirmExit()">Exit</button>
+                <button onclick="signOut()">Sign Out</button>
+            </div>
+        </div>
+
+        <h1 style="color:rgb(220, 15, 159); font-style: italic; font-size: xx-large; text-align: center;">Welcome to Sneek</h1>
+        
+        <div id="signup-form">
+            <h2>Sign Up</h2>
+            <form id="signup">
+                <input type="text" id="name" placeholder="Name" required><br><br>
+                <input type="tel" id="mobile" placeholder="Mobile Number" required><br><br>
+                <input type="email" id="email" placeholder="Email" required><br><br>
+                <input type="text" id="username" placeholder="Username" required><br><br>
+                <input type="password" id="password" placeholder="Password" required><br><br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div>
+            <p id="signup-error-container"></p>
+        </div>
+
+        <div id="login-form" style="display: none;">
+            <h2>Login</h2>
+            <form id="login">
+                <input type="text" id="login-username" placeholder="Username" required><br><br>
+                <input type="password" id="login-password" placeholder="Password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+            <p><a href="#">Forgot Password?</a></p>
+            <p id="login-error" class="error"></p>
+        </div>
+
+        <div id="products" style="display: none;">
+            <h2>Products</h2>
+            <input type="text" id="product-search-bar" placeholder="Search products">
+            <ul id="products-list">
+                <li>
+                    <img src="C:\Users\macha\OneDrive\WAD\.vscode\elecstove.jpg" alt="Electric Stove">
+                    <div>Electric Stove - $100</div>
+                    <button>Add to Cart</button>
+                </li>
+        <li>
+            <img src="C:\Users\macha\OneDrive\WAD\.vscode\vaccl.jpg" alt="Robotic Vaccum Cleaner">
+            <div>Robotic Vaccum Cleaner - $120</div>
+            <button>Add to Cart</button>
+        </li>
+        <li>
+            <img src="C:\Users\macha\OneDrive\WAD\.vscode\ofchair.jpg" alt="Office Chair">
+            <div>Office Chair- $90</div>
+            <button>Add to Cart</button>
+        </li>
+
+        <li>
+            <img src="C:\Users\macha\OneDrive\WAD\.vscode\sdtable.jpg" alt="Study Table">
+            <div>Study Table - $110</div>
+            <button>Add to Cart</button>
+        </li>
+
+        <li>
+            <img src="C:\Users\macha\OneDrive\WAD\.vscode\pframe.jpg" alt="Photo Frame">
+            <div>Photo Frame - $108</div>
+            <button>Add to Cart</button>
+        </li>
+
+        <li>
+            <img src="C:\Users\macha\OneDrive\WAD\.vscode\trbag.jpg" alt="Trolley Bag">
+            <div>Troleey Bag - $200</div>
+            <button>Add to Cart</button>
+        </li>
+
+
+        <li>
+            <img src="C:\Users\macha\OneDrive\WAD\.vscode\dining.jpg" alt="Dining Table">
+            <div>Dining Table - $400</div>
+            <button>Add to Cart</button>
+        </li>
+
+        
+
+
+    </ul>
+
+    <button id="view-cart-btn">View Cart</button>
+
+    
+    
+        </div>
+
+        <div id="cart" >
+            <h2 style = "display:none;">CART</h2>
+            <ul id="cart-items"></ul>
+        </div>
+
+</div>
+<script src="oshopscript.js"></script>
+</body>
+</html>
